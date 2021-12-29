@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript</title>
+		<meta charset="utf-8">
+
+		<script>
+
+			//Foreach é uma função pertencente ao objeto array
+			var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+
+			// Recebe como parâmetro uma função de callback, dizendo como ele deve atuar em cada índice do array. Essa função de callback recebe três parâmetros: valor, indice, array - nessa ordem.
+
+
+			/*
+			console.log(listaFuncionarios)
+			document.write(listaFuncionarios[3] + '<br>')
+			listaFuncionarios.forEach(function(valor, indice, array){
+				//lógica
+				console.log('Índice ' + indice + ' | valor: ' + valor)
+
+				if(valor == 'Lucas'){
+					array[indice] = 'Um novo valor'
+				}
+
+				console.log(array)
+			})
+
+			console.log(listaFuncionarios)
+			document.write(listaFuncionarios[3])
+			*/
+
+			//Pode-se encapsular a função de callback em uma variável, útil caso se use em mais de um array, além de deixar o código mais legível.
+
+			var f = function(valor, indice){
+				console.log(valor, indice)
+			}
+
+			listaFuncionarios.forEach(f)
+
+			//foreach atua somente em valores numéricos partindo de 0, embora não precise ser sequencial.
+
+		</script>
+		
+	</head>
+
+	<body>
+		
+	</body>
+</html>

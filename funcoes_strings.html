@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+		<script>
+			//Métodos são funções
+			//as strings iniciam no índice 0. Espaços preenchem índices
+
+			var nome = ' Guilherme Coelho '
+
+			//propriedade length (retorna o tamanho da string)
+			document.write(nome.length)
+
+			//método charAt() indica o caractere presente em determinado índice
+			document.write(nome.charAt(0))
+
+			//método indexOf() indica o índice em que determinado caractere ocorre pela primeira vez. Diferencia caracteres maiúsculos e minúsculos. Quando o caractere pedido não existe na string, ele retorna -1
+			document.write(nome.indexOf('e'))
+
+			//método replace() substitui uma ocorrência ou expressão
+			//Ex.: Substitua 'Coelho' por 'Fernandes'
+			document.write(nome.replace('Coelho', 'Fernandes'))
+
+			//método substr() recupera uma parte da string com base em uma posição inicial e uma quantidade definidade de caracteres
+			//Ex: a partir da posição 6, recupere 4 valores
+			document.write(nome.substr(5, 4))
+			//exibe erme 
+
+			// método toLowerCase() e toUpperCase()  converte as strings para minúsculas ou maiúsculas
+			document.write(nome.toUpperCase())
+
+			document.write('<br />')
+
+			// método trim() remove espaços em branco das extremidades de uma string
+			document.write('-' + nome.trim() + '-')
+
+
+		</script>
+
+	</head>
+
+	<body>
+		
+	</body>
+</html>
